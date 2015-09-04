@@ -24,6 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// Solution 1
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad ) {
         if (size.width > size.height) {
@@ -44,6 +45,8 @@
     }
 }
 
+// Solution 2
+/*
 -(UITraitCollection *)overrideTraitCollectionForChildViewController:(UIViewController *)childViewController {
 // Do this only for the iPad Landscape mode
     // Refer here more details http://stackoverflow.com/questions/26633172/sizing-class-for-ipad-portrait-and-landscape-modes/28268200#28268200
@@ -52,5 +55,6 @@
     UITraitCollection *traitsForiPadLandscape = [UITraitCollection traitCollectionWithTraitsFromCollections:@[traitsForiPadLandscapeHori, traitsForiPadLandscapeVerti]];
     return traitsForiPadLandscape;
 }
+ */
 
 @end
