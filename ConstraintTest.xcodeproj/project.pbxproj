@@ -14,6 +14,7 @@
 		27DB2E351B996CFB00C734BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DB2E341B996CFB00C734BA /* Images.xcassets */; };
 		27DB2E381B996CFB00C734BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DB2E361B996CFB00C734BA /* LaunchScreen.xib */; };
 		27DB2E441B996CFC00C734BA /* ConstraintTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27DB2E431B996CFC00C734BA /* ConstraintTestTests.m */; };
+		27DB2E4E1B99704400C734BA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27DB2E4D1B99704400C734BA /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		27DB2E3D1B996CFC00C734BA /* ConstraintTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DB2E421B996CFC00C734BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DB2E431B996CFC00C734BA /* ConstraintTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConstraintTestTests.m; sourceTree = "<group>"; };
+		27DB2E4D1B99704400C734BA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27DB2E4E1B99704400C734BA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		27DB2E1B1B996CF700C734BA = {
 			isa = PBXGroup;
 			children = (
+				27DB2E4D1B99704400C734BA /* MapKit.framework */,
 				27DB2E261B996CFA00C734BA /* ConstraintTest */,
 				27DB2E401B996CFC00C734BA /* ConstraintTestTests */,
 				27DB2E251B996CFA00C734BA /* Products */,
@@ -350,6 +354,7 @@
 				INFOPLIST_FILE = ConstraintTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -360,6 +365,7 @@
 				INFOPLIST_FILE = ConstraintTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
